@@ -1,0 +1,324 @@
+/*IMPORTA GOOGLE FONTS */
+@import url(https://fonts.googleapis.com/css?family='Roboto Condensed':100,400,700);
+/*IMPORTA UNA HOJA DE ESTILO SACADA DE NORMALIZE */
+@import url(normalize.css);
+/* selector universal */
+*{
+	box-sizing: border-box;
+	/* descuenta del width y height, lo sumado en padding y border */
+}
+
+body{
+	font-family: 'Roboto Condensed', sans-serif;
+	margin: 0;
+	background: url(../images/background.jpg) center top no-repeat;
+	background-size:cover;
+}
+
+ul, ol{
+	list-style: none; /* elimina la viñeta */
+	margin: 0;
+	padding: 0;
+}
+
+figure{
+	margin: 0;
+}
+
+p{
+	font-size:20px;
+	color:lightgrey;
+}
+
+h2 {
+	font-size:30px;
+	margin-top:20px;
+	color:lightgrey;
+}
+
+
+.container {
+	max-width:1200px;
+	margin:auto;
+}
+
+.main-header {
+	padding:20px 0;
+}
+
+
+
+header {
+ background:url(../images/main-headerbackground.jpg) center
+ top no-repeat;
+ background-size:cover;
+
+}
+
+
+
+.datos-principales {
+	width:50%;
+	float:left;
+}
+
+
+.datos-principales p{
+	margin-bottom:30px;
+	font-size:20px;
+	color:lightgrey;
+}
+
+.datos-principales .mail{
+	text-decoration:none;
+	color:black;
+	font-size:18px;
+	color:lightgrey;
+}
+
+.datos-principales a span{
+	color:lightblue;
+}
+.foto {
+	float:right;
+	width:200px;
+}
+
+.cleaner{
+	clear: both;
+}
+
+.iconos {	
+	margin-top:20px;
+}
+
+
+.iconos a {
+	margin-right:25px;
+	text-decoration: none;
+	color:lightgrey;;
+	font-size:30px !important;
+
+
+}
+
+
+/*********** PROFILE ************
+***********         ************/
+
+
+.profile {
+	margin-top:45px;
+}
+
+.profile h2 {
+	margin-bottom:50px;
+}	
+.imgtitulo {
+	font-size:40px !important;
+	margin-top:15px;
+	margin-right:10px;
+	color:lightgrey;
+}
+
+
+/*********** SKILLS ************
+***********         ************/
+
+.skills {
+	margin-top:40px;
+}
+
+.skills h2{
+	margin-bottom:60px;
+}
+
+.conocimientos {
+	width:25%;
+	text-align:center;
+	float:left;
+}
+
+.logo{
+	font-size:100px !important;
+	color:lightgrey;
+}
+
+.estrella{
+	font-size:20px !important;
+	color:lightgrey;
+}
+
+
+/*********** EDUCATION ************
+***********         ************/
+
+.education {
+	margin-top:60px;
+}
+
+
+.education h2{
+	margin-bottom:50px;
+}
+li {
+	list-style:disc;
+	width:70%;
+	margin-left:30px;
+	color:lightgrey;
+	text-transform:uppercase;
+	list-style:none;
+	position:relative;
+}
+
+li p{
+	color:lightblue;
+	font-size:15px;
+    text-transform:none;
+}
+
+hr.style13 {
+	height: 2px;
+	border: 0;
+	box-shadow: 0 10px 20px -15px lightgrey inset;
+	margin-top:50px;
+}
+
+.fa-lightbulb-o {
+	font-size:50px;
+	color:lightgrey;
+	position:absolute;
+	left:-20px;
+}
+
+
+/*********** CONTACT ************
+***********         ************/
+
+.contacto {
+	margin-top:80px;
+}
+
+.contacto h2{
+	margin-bottom:60px;
+}
+
+
+.contact-button {
+text-align:center;
+}
+
+.button-form{
+	border: none;
+	background-color: #06B4F2;
+	width: 200px;
+	height: 60px;
+	color: #fff;
+	font-family: inherit;
+	font-size: 15px;
+	text-transform:uppercase;
+	font-weight:bold;
+	letter-spacing:2px;
+	border-radius:10px;
+	margin-top:30px;
+}
+
+
+.left-form {
+	float:left;
+	width:50%;
+}
+.left-form input{
+	width:95%;	
+	height: 75px;
+	font-size: 20px;
+	padding: 0 15px;
+	font-family: inherit;
+	margin-bottom:50px;
+	border-radius:5px;
+	float:left;
+}
+
+.right-form {
+	float:left;
+	width:50%;
+}
+.right-form textarea{
+	height:200px;
+	width:100%;
+	font-size: 20px;
+	padding: 0 20px;
+	font-family: inherit;
+	border-radius:5px;
+	font-family: inherit;
+	display:block;
+}
+
+
+/***********    COMIENZO MEDIA QUERIES   *************
+************                             *************/
+
+@media (max-width:800px) {
+.container,.main-header{
+		width:95%;
+	}
+
+.conocimientos {
+	width:50%;
+	margin-bottom:50px;
+}
+
+.left-form {
+	float:none;
+	width:100%;
+}
+.right-form {
+	float:none;
+	width:95%;
+}
+
+@media (max-width:550px) {
+
+
+.container {
+	width: 80%;
+}
+
+.datos-principales	 {
+	text-align:center;
+	margin:auto;
+	width:100%;
+}
+.foto {
+	display:none;
+}
+
+.profile {
+	text-align:center;
+}
+
+
+.skills h2 {
+	text-align:center;
+}
+.conocimientos {
+	width:100%;
+}
+
+
+
+
+.education h2{
+	text-align:center;
+}
+
+.contacto h2{
+	width:100%;
+	text-align:center;
+}
+
+.contact-form{
+	text-align:center;
+}
+}
+
